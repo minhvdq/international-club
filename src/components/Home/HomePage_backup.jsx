@@ -164,7 +164,7 @@ ${formData.message}`;
               </span>
               <span className="ml-2 text-lg font-modern text-gray-600">International Club</span>
             </div>
-
+            
             {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-8">
               <button onClick={() => scrollToSection('home')} className="font-modern text-gray-700 hover:text-orange-600 transition-colors">
@@ -229,33 +229,27 @@ ${formData.message}`;
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="pt-16 min-h-screen relative bg-gradient-to-br from-orange-50 to-white">
-        
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: 'url(/images/main.png)' }}
-        ></div>
-        <div className="absolute inset-0 bg-black/50"></div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 min-h-screen flex items-center">
-          <div className="text-center w-full">
-            <h1 className="text-5xl md:text-7xl font-display font-bold text-white mb-6 drop-shadow-lg">
+      <section id="home" className="pt-16 min-h-screen bg-gradient-to-br from-orange-50 to-white flex items-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+          <div className="text-center">
+            <h1 className="text-5xl md:text-7xl font-display font-bold text-gray-900 mb-6">
               Welcome to the<br />
-              <span className="text-orange-400">International Club</span>
+              <span className="text-orange-600">International Club</span>
             </h1>
-            <p className="text-xl md:text-2xl font-elegant text-white mb-8 max-w-3xl mx-auto drop-shadow-md">
+            <p className="text-xl md:text-2xl font-elegant text-gray-600 mb-8 max-w-3xl mx-auto">
               Celebrating diversity, fostering global understanding, and building lasting friendships 
               at Gettysburg College
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button 
                 onClick={() => scrollToSection('about')}
-                className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-lg text-lg font-modern font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
+                className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-lg text-lg font-modern font-semibold transition-all duration-300 transform hover:scale-105"
               >
                 Learn More
               </button>
               <button 
                 onClick={() => scrollToSection('contact')}
-                className="border-2 border-white text-white hover:bg-white hover:text-orange-600 px-8 py-4 rounded-lg text-lg font-modern font-semibold transition-all duration-300 shadow-lg"
+                className="border-2 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white px-8 py-4 rounded-lg text-lg font-modern font-semibold transition-all duration-300"
               >
                 Join Us
               </button>
@@ -308,22 +302,22 @@ ${formData.message}`;
           <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md">
               <img className="w-16 h-16 mx-auto mb-4 opacity-80" src="/images/user.png" alt="Officers icon" />
-              <div className="text-3xl font-display font-bold text-orange-600 mb-2">6</div>
+              <div className="text-3xl font-display font-bold text-orange-600 mb-2">7</div>
               <div className="font-modern text-gray-600">Executive Officers</div>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
               <img className="w-16 h-16 mx-auto mb-4 opacity-80" src="/images/people.png" alt="Members icon" />
-              <div className="text-3xl font-display font-bold text-orange-600 mb-2">165</div>
+              <div className="text-3xl font-display font-bold text-orange-600 mb-2">217</div>
               <div className="font-modern text-gray-600">Active Members</div>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
               <img className="w-16 h-16 mx-auto mb-4 opacity-80" src="/images/calendar.png" alt="Events icon" />
-              <div className="text-3xl font-display font-bold text-orange-600 mb-2">6</div>
+              <div className="text-3xl font-display font-bold text-orange-600 mb-2">66</div>
               <div className="font-modern text-gray-600">Events This Year</div>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
               <img className="w-16 h-16 mx-auto mb-4 opacity-80" src="/images/world.png" alt="Countries icon" />
-              <div className="text-3xl font-display font-bold text-orange-600 mb-2">60+</div>
+              <div className="text-3xl font-display font-bold text-orange-600 mb-2">100+</div>
               <div className="font-modern text-gray-600">Countries Represented</div>
             </div>
           </div>
@@ -406,17 +400,41 @@ ${formData.message}`;
                 onClick={() => openImageModal('/images/main.png', 'Cultural celebration')}
               />
             </div>
-            <div className="aspect-square bg-orange-200 rounded-lg flex items-center justify-center">
-              <img src="/images/1.jpg" alt="Club event" className="w-full h-full object-cover hover:scale-105 transition-transform cursor-pointer" />
+            <div 
+              className="aspect-square bg-orange-200 rounded-lg flex items-center justify-center cursor-pointer hover:bg-orange-300 transition-colors"
+              onClick={() => openImageModal('/images/placeholder-food.jpg', 'Food Festival 2024')}
+            >
+              <span className="text-orange-600 font-modern font-semibold">Food Festival 2024</span>
             </div>
-            <div className="aspect-square bg-blue-200 rounded-lg flex items-center justify-center">
-              <img src="/images/2.jpg" alt="Club event" className="w-full h-full object-cover hover:scale-105 transition-transform cursor-pointer" />
+            <div 
+              className="aspect-square bg-blue-200 rounded-lg flex items-center justify-center cursor-pointer hover:bg-blue-300 transition-colors"
+              onClick={() => openImageModal('/images/placeholder-cultural.jpg', 'Cultural Night')}
+            >
+              <span className="text-blue-600 font-modern font-semibold">Cultural Night</span>
             </div>
-            <div className="aspect-square bg-green-200 rounded-lg flex items-center justify-center">
-              <img src="/images/3.jpg" alt="Club event" className="w-full h-full object-cover hover:scale-105 transition-transform cursor-pointer" />
+            <div 
+              className="aspect-square bg-green-200 rounded-lg flex items-center justify-center cursor-pointer hover:bg-green-300 transition-colors"
+              onClick={() => openImageModal('/images/placeholder-welcome.jpg', 'Welcome Event')}
+            >
+              <span className="text-green-600 font-modern font-semibold">Welcome Event</span>
             </div>
-            <div className="aspect-square bg-purple-200 rounded-lg flex items-center justify-center">
-              <img src="/images/4.jpg" alt="Club event" className="w-full h-full object-cover hover:scale-105 transition-transform cursor-pointer" />
+            <div 
+              className="aspect-square bg-purple-200 rounded-lg flex items-center justify-center cursor-pointer hover:bg-purple-300 transition-colors"
+              onClick={() => openImageModal('/images/placeholder-workshop.jpg', 'Workshop Series')}
+            >
+              <span className="text-purple-600 font-modern font-semibold">Workshop Series</span>
+            </div>
+            <div 
+              className="aspect-square bg-red-200 rounded-lg flex items-center justify-center cursor-pointer hover:bg-red-300 transition-colors"
+              onClick={() => openImageModal('/images/placeholder-service.jpg', 'Community Service')}
+            >
+              <span className="text-red-600 font-modern font-semibold">Community Service</span>
+            </div>
+            <div 
+              className="aspect-square bg-yellow-200 rounded-lg flex items-center justify-center cursor-pointer hover:bg-yellow-300 transition-colors"
+              onClick={() => openImageModal('/images/placeholder-graduation.jpg', 'Graduation Celebration')}
+            >
+              <span className="text-yellow-600 font-modern font-semibold">Graduation Celebration</span>
             </div>
           </div>
         </div>
@@ -436,14 +454,13 @@ ${formData.message}`;
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             {[
-              {
-                name: "Tejaswi Amatya", position: "President", country: "Nepal"
-              },
-              { name: "Ariana Piscoya", position: "Vice President", country: "Peru" },
-              { name: "Sapujya Shrestha", position: "Secretary", country: "Nepal" },
-              { name: "Iveelen Bayasgalan", position: "Treasurer", country: "Mongolia" },
-              { name: "Abiral Shrestha", position: "Public Relations", country: "Nepal" },
-              { name: "Andrew Fabian", position: "Social Chair", country: "Hungary" }
+              { name: "Sarah Johnson", position: "President", country: "USA" },
+              { name: "Raj Patel", position: "Vice President", country: "India" },
+              { name: "Maria Garcia", position: "Secretary", country: "Spain" },
+              { name: "Chen Wei", position: "Treasurer", country: "China" },
+              { name: "Ahmed Hassan", position: "Events Coordinator", country: "Egypt" },
+              { name: "Sophie Dubois", position: "Social Media Manager", country: "France" },
+              { name: "Yuki Tanaka", position: "Cultural Liaison", country: "Japan" }
             ].map((exec, index) => (
               <div 
                 key={index} 
@@ -582,19 +599,9 @@ ${formData.message}`;
                 <a href="https://www.instagram.com/gburg_intlclub/" target="_blank" rel="noopener noreferrer" className="hover:text-orange-500 transition-colors">
                   <img src="/images/instagram.png" alt="Instagram" className="w-6 h-6" />
                 </a>
-                <a href="#" className="hover:text-orange-500 transition-colors">
-                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
-                  </svg>
-                </a>
-                <a href="#" className="hover:text-orange-500 transition-colors">
-                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
-                  </svg>
-                </a>
               </div>
             </div>
-
+            
             <div>
               <h3 className="text-xl font-display font-semibold mb-4">Quick Links</h3>
               <ul className="space-y-2 font-body text-gray-300">
@@ -605,7 +612,7 @@ ${formData.message}`;
                 <li><button onClick={() => scrollToSection('contact')} className="hover:text-orange-500 transition-colors">Contact</button></li>
               </ul>
             </div>
-
+            
             <div>
               <h3 className="text-xl font-display font-semibold mb-4">Contact Info</h3>
               <div className="font-body text-gray-300 space-y-2">
@@ -616,7 +623,7 @@ ${formData.message}`;
               </div>
             </div>
           </div>
-
+          
           <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
             <p>&copy; 2025 Gettysburg College International Club. All rights reserved.</p>
           </div>
