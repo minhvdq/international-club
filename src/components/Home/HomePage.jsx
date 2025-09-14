@@ -406,17 +406,37 @@ ${formData.message}`;
                 onClick={() => openImageModal('/images/main.png', 'Cultural celebration')}
               />
             </div>
-            <div className="aspect-square bg-orange-200 rounded-lg flex items-center justify-center">
-              <img src="/images/1.jpg" alt="Club event" className="w-full h-full object-cover hover:scale-105 transition-transform cursor-pointer" />
+            <div className="aspect-square bg-orange-200 rounded-lg overflow-hidden">
+              <img 
+                src="/images/1.jpg" 
+                alt="International Club Event" 
+                className="w-full h-full object-cover hover:scale-105 transition-transform cursor-pointer" 
+                onClick={() => openImageModal('/images/1.jpg', 'International Club Event')}
+              />
             </div>
-            <div className="aspect-square bg-blue-200 rounded-lg flex items-center justify-center">
-              <img src="/images/2.jpg" alt="Club event" className="w-full h-full object-cover hover:scale-105 transition-transform cursor-pointer" />
+            <div className="aspect-square bg-blue-200 rounded-lg overflow-hidden">
+              <img 
+                src="/images/2.jpg" 
+                alt="Cultural Celebration" 
+                className="w-full h-full object-cover hover:scale-105 transition-transform cursor-pointer" 
+                onClick={() => openImageModal('/images/2.jpg', 'Cultural Celebration')}
+              />
             </div>
-            <div className="aspect-square bg-green-200 rounded-lg flex items-center justify-center">
-              <img src="/images/3.jpg" alt="Club event" className="w-full h-full object-cover hover:scale-105 transition-transform cursor-pointer" />
+            <div className="aspect-square bg-green-200 rounded-lg overflow-hidden">
+              <img 
+                src="/images/3.jpg" 
+                alt="Community Event" 
+                className="w-full h-full object-cover hover:scale-105 transition-transform cursor-pointer" 
+                onClick={() => openImageModal('/images/3.jpg', 'Community Event')}
+              />
             </div>
-            <div className="aspect-square bg-purple-200 rounded-lg flex items-center justify-center">
-              <img src="/images/4.jpg" alt="Club event" className="w-full h-full object-cover hover:scale-105 transition-transform cursor-pointer" />
+            <div className="aspect-square bg-purple-200 rounded-lg overflow-hidden">
+              <img 
+                src="/images/4.jpg" 
+                alt="International Club Activity" 
+                className="w-full h-full object-cover hover:scale-105 transition-transform cursor-pointer" 
+                onClick={() => openImageModal('/images/4.jpg', 'International Club Activity')}
+              />
             </div>
           </div>
         </div>
@@ -600,8 +620,7 @@ ${formData.message}`;
             <div>
               <h3 className="text-xl font-display font-semibold mb-4">Contact Info</h3>
               <div className="font-body text-gray-300 space-y-2">
-                <p>internationalclub@gettysburg.edu</p>
-                <p>Campus Center, Room 202</p>
+                <p>amatte01@gettysburg.edu</p>
                 <p>Gettysburg College</p>
                 <p>Gettysburg, PA 17325</p>
               </div>
