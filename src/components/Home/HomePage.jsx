@@ -38,7 +38,7 @@ export default function HomePage() {
               </span>
               <span className="ml-2 text-lg font-modern text-gray-600">International Club</span>
             </div>
-            
+
             {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-8">
               <button onClick={() => scrollToSection('home')} className="font-modern text-gray-700 hover:text-orange-600 transition-colors">
@@ -104,9 +104,9 @@ export default function HomePage() {
 
       {/* Hero Section */}
       <section id="home" className="relative pt-16 h-screen">
-        <img 
-          src="/images/main.png" 
-          alt="International flags representing diversity" 
+        <img
+          src="/images/main.png"
+          alt="International flags representing diversity"
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/50"></div>
@@ -117,7 +117,7 @@ export default function HomePage() {
           <p className="text-xl md:text-2xl font-elegant mb-8 max-w-2xl leading-relaxed">
             Promoting multicultural exchange and building bridges between international and local students at Gettysburg College
           </p>
-          <button 
+          <button
             onClick={() => scrollToSection('contact')}
             className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-full text-lg font-modern font-semibold transition-colors shadow-lg"
           >
@@ -135,13 +135,13 @@ export default function HomePage() {
                 About <span className="text-orange-600">Our Club</span>
               </h2>
               <p className="text-lg font-body text-gray-700 mb-6 leading-relaxed">
-                The International Club at Gettysburg College serves as a vibrant bridge connecting cultures, 
+                The International Club at Gettysburg College serves as a vibrant bridge connecting cultures,
                 fostering understanding, and creating lasting friendships among students from around the world.
               </p>
               <p className="text-lg font-body text-gray-700 mb-8 leading-relaxed">
-                We promote multicultural exchange, support international students in their academic journey, 
-                and organize events that celebrate the rich diversity of our global community. Whether you're 
-                an international student looking for a home away from home or a local student eager to explore 
+                We promote multicultural exchange, support international students in their academic journey,
+                and organize events that celebrate the rich diversity of our global community. Whether you're
+                an international student looking for a home away from home or a local student eager to explore
                 different cultures, our club welcomes you with open arms.
               </p>
               <div className="space-y-4">
@@ -164,9 +164,9 @@ export default function HomePage() {
               </div>
             </div>
             <div>
-              <img 
-                src="/images/aboutus.jpg" 
-                alt="International Club members at a cultural event" 
+              <img
+                src="/images/aboutus.jpg"
+                alt="International Club members at a cultural event"
                 className="rounded-lg shadow-xl w-full h-auto"
               />
             </div>
@@ -176,22 +176,22 @@ export default function HomePage() {
           <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div className="bg-white p-6 rounded-lg shadow-md">
               <img className="w-16 h-16 mx-auto mb-4 opacity-80" src="/images/user.png" alt="Officers icon" />
-              <div className="text-3xl font-display font-bold text-orange-600 mb-2">7</div>
+              <div className="text-3xl font-display font-bold text-orange-600 mb-2">6</div>
               <div className="font-modern text-gray-600">Executive Officers</div>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
               <img className="w-16 h-16 mx-auto mb-4 opacity-80" src="/images/people.png" alt="Members icon" />
-              <div className="text-3xl font-display font-bold text-orange-600 mb-2">217</div>
+              <div className="text-3xl font-display font-bold text-orange-600 mb-2">165</div>
               <div className="font-modern text-gray-600">Active Members</div>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
               <img className="w-16 h-16 mx-auto mb-4 opacity-80" src="/images/calendar.png" alt="Events icon" />
-              <div className="text-3xl font-display font-bold text-orange-600 mb-2">66</div>
+              <div className="text-3xl font-display font-bold text-orange-600 mb-2">6</div>
               <div className="font-modern text-gray-600">Events This Year</div>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
               <img className="w-16 h-16 mx-auto mb-4 opacity-80" src="/images/world.png" alt="Countries icon" />
-              <div className="text-3xl font-display font-bold text-orange-600 mb-2">100+</div>
+              <div className="text-3xl font-display font-bold text-orange-600 mb-2">60+</div>
               <div className="font-modern text-gray-600">Countries Represented</div>
             </div>
           </div>
@@ -304,22 +304,16 @@ export default function HomePage() {
               <img src="/images/main.png" alt="Cultural celebration" className="w-full h-full object-cover hover:scale-105 transition-transform cursor-pointer" />
             </div>
             <div className="aspect-square bg-orange-200 rounded-lg flex items-center justify-center">
-              <span className="text-orange-600 font-modern font-semibold">Food Festival 2024</span>
+              <img src="/images/1.jpg" alt="Club event" className="w-full h-full object-cover hover:scale-105 transition-transform cursor-pointer" />
             </div>
             <div className="aspect-square bg-blue-200 rounded-lg flex items-center justify-center">
-              <span className="text-blue-600 font-modern font-semibold">Cultural Night</span>
+              <img src="/images/2.jpg" alt="Club event" className="w-full h-full object-cover hover:scale-105 transition-transform cursor-pointer" />
             </div>
             <div className="aspect-square bg-green-200 rounded-lg flex items-center justify-center">
-              <span className="text-green-600 font-modern font-semibold">Welcome Event</span>
+              <img src="/images/3.jpg" alt="Club event" className="w-full h-full object-cover hover:scale-105 transition-transform cursor-pointer" />
             </div>
             <div className="aspect-square bg-purple-200 rounded-lg flex items-center justify-center">
-              <span className="text-purple-600 font-modern font-semibold">Workshop Series</span>
-            </div>
-            <div className="aspect-square bg-red-200 rounded-lg flex items-center justify-center">
-              <span className="text-red-600 font-modern font-semibold">Community Service</span>
-            </div>
-            <div className="aspect-square bg-yellow-200 rounded-lg flex items-center justify-center">
-              <span className="text-yellow-600 font-modern font-semibold">Graduation Celebration</span>
+              <img src="/images/4.jpg" alt="Club event" className="w-full h-full object-cover hover:scale-105 transition-transform cursor-pointer" />
             </div>
           </div>
         </div>
@@ -340,13 +334,14 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             {/* Executive positions */}
             {[
-              { name: "Sarah Johnson", position: "President", country: "USA" },
-              { name: "Raj Patel", position: "Vice President", country: "India" },
-              { name: "Maria Garcia", position: "Secretary", country: "Spain" },
-              { name: "Chen Wei", position: "Treasurer", country: "China" },
-              { name: "Ahmed Hassan", position: "Events Coordinator", country: "Egypt" },
-              { name: "Sophie Dubois", position: "Social Media Manager", country: "France" },
-              { name: "Yuki Tanaka", position: "Cultural Liaison", country: "Japan" }
+              {
+                name: "Tejaswi Amatya", position: "President", country: "Nepal"
+              },
+              { name: "Ariana Piscoya", position: "Vice President", country: "Peru" },
+              { name: "Sapujya Shrestha", position: "Secretary", country: "Nepal" },
+              { name: "Iveelen Bayasgalan", position: "Treasurer", country: "Mongolia" },
+              { name: "Abiral Shrestha", position: "Public Relations", country: "Nepal" },
+              { name: "Andrew Fabian", position: "Social Chair", country: "Hungary" }
             ].map((exec, index) => (
               <div key={index} className="text-center">
                 <div className="w-32 h-32 mx-auto mb-4 bg-gray-200 rounded-full flex items-center justify-center">
@@ -478,17 +473,17 @@ export default function HomePage() {
                 </a>
                 <a href="#" className="hover:text-orange-500 transition-colors">
                   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
                   </svg>
                 </a>
                 <a href="#" className="hover:text-orange-500 transition-colors">
                   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                    <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z" />
                   </svg>
                 </a>
               </div>
             </div>
-            
+
             <div>
               <h3 className="text-xl font-display font-semibold mb-4">Quick Links</h3>
               <ul className="space-y-2 font-body text-gray-300">
@@ -499,7 +494,7 @@ export default function HomePage() {
                 <li><button onClick={() => scrollToSection('contact')} className="hover:text-orange-500 transition-colors">Contact</button></li>
               </ul>
             </div>
-            
+
             <div>
               <h3 className="text-xl font-display font-semibold mb-4">Contact Info</h3>
               <div className="font-body text-gray-300 space-y-2">
@@ -510,7 +505,7 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-          
+
           <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
             <p className="font-body">&copy; 2025 Gettysburg College International Club. All rights reserved.</p>
           </div>
