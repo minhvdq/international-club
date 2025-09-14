@@ -164,7 +164,7 @@ ${formData.message}`;
               </span>
               <span className="ml-2 text-lg font-modern text-gray-600">International Club</span>
             </div>
-            
+
             {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-8">
               <button onClick={() => scrollToSection('home')} className="font-modern text-gray-700 hover:text-orange-600 transition-colors">
@@ -308,22 +308,22 @@ ${formData.message}`;
           <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md">
               <img className="w-16 h-16 mx-auto mb-4 opacity-80" src="/images/user.png" alt="Officers icon" />
-              <div className="text-3xl font-display font-bold text-orange-600 mb-2">7</div>
+              <div className="text-3xl font-display font-bold text-orange-600 mb-2">6</div>
               <div className="font-modern text-gray-600">Executive Officers</div>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
               <img className="w-16 h-16 mx-auto mb-4 opacity-80" src="/images/people.png" alt="Members icon" />
-              <div className="text-3xl font-display font-bold text-orange-600 mb-2">217</div>
+              <div className="text-3xl font-display font-bold text-orange-600 mb-2">165</div>
               <div className="font-modern text-gray-600">Active Members</div>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
               <img className="w-16 h-16 mx-auto mb-4 opacity-80" src="/images/calendar.png" alt="Events icon" />
-              <div className="text-3xl font-display font-bold text-orange-600 mb-2">66</div>
+              <div className="text-3xl font-display font-bold text-orange-600 mb-2">6</div>
               <div className="font-modern text-gray-600">Events This Year</div>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
               <img className="w-16 h-16 mx-auto mb-4 opacity-80" src="/images/world.png" alt="Countries icon" />
-              <div className="text-3xl font-display font-bold text-orange-600 mb-2">100+</div>
+              <div className="text-3xl font-display font-bold text-orange-600 mb-2">60+</div>
               <div className="font-modern text-gray-600">Countries Represented</div>
             </div>
           </div>
@@ -406,41 +406,17 @@ ${formData.message}`;
                 onClick={() => openImageModal('/images/main.png', 'Cultural celebration')}
               />
             </div>
-            <div 
-              className="aspect-square bg-orange-200 rounded-lg flex items-center justify-center cursor-pointer hover:bg-orange-300 transition-colors"
-              onClick={() => openImageModal('/images/placeholder-food.jpg', 'Food Festival 2024')}
-            >
-              <span className="text-orange-600 font-modern font-semibold">Food Festival 2024</span>
+            <div className="aspect-square bg-orange-200 rounded-lg flex items-center justify-center">
+              <img src="/images/1.jpg" alt="Club event" className="w-full h-full object-cover hover:scale-105 transition-transform cursor-pointer" />
             </div>
-            <div 
-              className="aspect-square bg-blue-200 rounded-lg flex items-center justify-center cursor-pointer hover:bg-blue-300 transition-colors"
-              onClick={() => openImageModal('/images/placeholder-cultural.jpg', 'Cultural Night')}
-            >
-              <span className="text-blue-600 font-modern font-semibold">Cultural Night</span>
+            <div className="aspect-square bg-blue-200 rounded-lg flex items-center justify-center">
+              <img src="/images/2.jpg" alt="Club event" className="w-full h-full object-cover hover:scale-105 transition-transform cursor-pointer" />
             </div>
-            <div 
-              className="aspect-square bg-green-200 rounded-lg flex items-center justify-center cursor-pointer hover:bg-green-300 transition-colors"
-              onClick={() => openImageModal('/images/placeholder-welcome.jpg', 'Welcome Event')}
-            >
-              <span className="text-green-600 font-modern font-semibold">Welcome Event</span>
+            <div className="aspect-square bg-green-200 rounded-lg flex items-center justify-center">
+              <img src="/images/3.jpg" alt="Club event" className="w-full h-full object-cover hover:scale-105 transition-transform cursor-pointer" />
             </div>
-            <div 
-              className="aspect-square bg-purple-200 rounded-lg flex items-center justify-center cursor-pointer hover:bg-purple-300 transition-colors"
-              onClick={() => openImageModal('/images/placeholder-workshop.jpg', 'Workshop Series')}
-            >
-              <span className="text-purple-600 font-modern font-semibold">Workshop Series</span>
-            </div>
-            <div 
-              className="aspect-square bg-red-200 rounded-lg flex items-center justify-center cursor-pointer hover:bg-red-300 transition-colors"
-              onClick={() => openImageModal('/images/placeholder-service.jpg', 'Community Service')}
-            >
-              <span className="text-red-600 font-modern font-semibold">Community Service</span>
-            </div>
-            <div 
-              className="aspect-square bg-yellow-200 rounded-lg flex items-center justify-center cursor-pointer hover:bg-yellow-300 transition-colors"
-              onClick={() => openImageModal('/images/placeholder-graduation.jpg', 'Graduation Celebration')}
-            >
-              <span className="text-yellow-600 font-modern font-semibold">Graduation Celebration</span>
+            <div className="aspect-square bg-purple-200 rounded-lg flex items-center justify-center">
+              <img src="/images/4.jpg" alt="Club event" className="w-full h-full object-cover hover:scale-105 transition-transform cursor-pointer" />
             </div>
           </div>
         </div>
@@ -459,14 +435,16 @@ ${formData.message}`;
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+        
             {[
-              { name: "Sarah Johnson", position: "President", country: "USA" },
-              { name: "Raj Patel", position: "Vice President", country: "India" },
-              { name: "Maria Garcia", position: "Secretary", country: "Spain" },
-              { name: "Chen Wei", position: "Treasurer", country: "China" },
-              { name: "Ahmed Hassan", position: "Events Coordinator", country: "Egypt" },
-              { name: "Sophie Dubois", position: "Social Media Manager", country: "France" },
-              { name: "Yuki Tanaka", position: "Cultural Liaison", country: "Japan" }
+              {
+                name: "Tejaswi Amatya", position: "President", country: "Nepal"
+              },
+              { name: "Ariana Piscoya", position: "Vice President", country: "Peru" },
+              { name: "Sapujya Shrestha", position: "Secretary", country: "Nepal" },
+              { name: "Iveelen Bayasgalan", position: "Treasurer", country: "Mongolia" },
+              { name: "Abiral Shrestha", position: "Public Relations", country: "Nepal" },
+              { name: "Andrew Fabian", position: "Social Chair", country: "Hungary" }
             ].map((exec, index) => (
               <div 
                 key={index} 
@@ -607,7 +585,7 @@ ${formData.message}`;
                 </a>
               </div>
             </div>
-            
+
             <div>
               <h3 className="text-xl font-display font-semibold mb-4">Quick Links</h3>
               <ul className="space-y-2 font-body text-gray-300">
@@ -618,7 +596,7 @@ ${formData.message}`;
                 <li><button onClick={() => scrollToSection('contact')} className="hover:text-orange-500 transition-colors">Contact</button></li>
               </ul>
             </div>
-            
+
             <div>
               <h3 className="text-xl font-display font-semibold mb-4">Contact Info</h3>
               <div className="font-body text-gray-300 space-y-2">
@@ -629,7 +607,7 @@ ${formData.message}`;
               </div>
             </div>
           </div>
-          
+
           <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
             <p>&copy; 2025 Gettysburg College International Club. All rights reserved.</p>
           </div>
