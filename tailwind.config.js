@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'display': ['Playfair Display', 'serif'],
+        'body': ['Inter', 'system-ui', 'sans-serif'],
+        'elegant': ['Cormorant Garamond', 'serif'],
+        'modern': ['Poppins', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }

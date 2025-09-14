@@ -27,36 +27,36 @@ export default function HomePage() {
   };
 
   return (
-    <div className="bg-white text-gray-900 font-sans">
+    <div className="bg-white text-gray-900 font-body">
       {/* Navbar */}
       <nav className="fixed w-full bg-white/95 backdrop-blur-sm shadow-md z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <span className="text-2xl font-bold text-orange-600">
+              <span className="text-2xl font-display font-bold text-orange-600">
                 Gettysburg College
               </span>
-              <span className="ml-2 text-lg text-gray-600">International Club</span>
+              <span className="ml-2 text-lg font-modern text-gray-600">International Club</span>
             </div>
             
             {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-8">
-              <button onClick={() => scrollToSection('home')} className="text-gray-700 hover:text-orange-600 transition-colors">
+              <button onClick={() => scrollToSection('home')} className="font-modern text-gray-700 hover:text-orange-600 transition-colors">
                 Home
               </button>
-              <button onClick={() => scrollToSection('about')} className="text-gray-700 hover:text-orange-600 transition-colors">
+              <button onClick={() => scrollToSection('about')} className="font-modern text-gray-700 hover:text-orange-600 transition-colors">
                 About
               </button>
-              <button onClick={() => scrollToSection('events')} className="text-gray-700 hover:text-orange-600 transition-colors">
+              <button onClick={() => scrollToSection('events')} className="font-modern text-gray-700 hover:text-orange-600 transition-colors">
                 Events
               </button>
-              <button onClick={() => scrollToSection('gallery')} className="text-gray-700 hover:text-orange-600 transition-colors">
+              <button onClick={() => scrollToSection('gallery')} className="font-modern text-gray-700 hover:text-orange-600 transition-colors">
                 Gallery
               </button>
-              <button onClick={() => scrollToSection('executives')} className="text-gray-700 hover:text-orange-600 transition-colors">
+              <button onClick={() => scrollToSection('executives')} className="font-modern text-gray-700 hover:text-orange-600 transition-colors">
                 Executives
               </button>
-              <button onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-orange-600 transition-colors">
+              <button onClick={() => scrollToSection('contact')} className="font-modern text-gray-700 hover:text-orange-600 transition-colors">
                 Contact
               </button>
             </div>
@@ -78,22 +78,22 @@ export default function HomePage() {
           {isMenuOpen && (
             <div className="md:hidden">
               <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
-                <button onClick={() => scrollToSection('home')} className="block px-3 py-2 text-gray-700 hover:text-orange-600">
+                <button onClick={() => scrollToSection('home')} className="block px-3 py-2 font-modern text-gray-700 hover:text-orange-600">
                   Home
                 </button>
-                <button onClick={() => scrollToSection('about')} className="block px-3 py-2 text-gray-700 hover:text-orange-600">
+                <button onClick={() => scrollToSection('about')} className="block px-3 py-2 font-modern text-gray-700 hover:text-orange-600">
                   About
                 </button>
-                <button onClick={() => scrollToSection('events')} className="block px-3 py-2 text-gray-700 hover:text-orange-600">
+                <button onClick={() => scrollToSection('events')} className="block px-3 py-2 font-modern text-gray-700 hover:text-orange-600">
                   Events
                 </button>
-                <button onClick={() => scrollToSection('gallery')} className="block px-3 py-2 text-gray-700 hover:text-orange-600">
+                <button onClick={() => scrollToSection('gallery')} className="block px-3 py-2 font-modern text-gray-700 hover:text-orange-600">
                   Gallery
                 </button>
-                <button onClick={() => scrollToSection('executives')} className="block px-3 py-2 text-gray-700 hover:text-orange-600">
+                <button onClick={() => scrollToSection('executives')} className="block px-3 py-2 font-modern text-gray-700 hover:text-orange-600">
                   Executives
                 </button>
-                <button onClick={() => scrollToSection('contact')} className="block px-3 py-2 text-gray-700 hover:text-orange-600">
+                <button onClick={() => scrollToSection('contact')} className="block px-3 py-2 font-modern text-gray-700 hover:text-orange-600">
                   Contact
                 </button>
               </div>
@@ -111,15 +111,15 @@ export default function HomePage() {
         />
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="relative z-10 flex flex-col justify-center items-center h-full text-center text-white px-4">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6">
+          <h1 className="text-5xl md:text-7xl font-display font-bold mb-6">
             <span className="text-orange-500">International</span> Club
           </h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-2xl">
+          <p className="text-xl md:text-2xl font-elegant mb-8 max-w-2xl leading-relaxed">
             Promoting multicultural exchange and building bridges between international and local students at Gettysburg College
           </p>
           <button 
             onClick={() => scrollToSection('contact')}
-            className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-colors shadow-lg"
+            className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-full text-lg font-modern font-semibold transition-colors shadow-lg"
           >
             Join Our Community
           </button>
@@ -131,14 +131,14 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">
+              <h2 className="text-4xl font-display font-bold text-gray-900 mb-6">
                 About <span className="text-orange-600">Our Club</span>
               </h2>
-              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+              <p className="text-lg font-body text-gray-700 mb-6 leading-relaxed">
                 The International Club at Gettysburg College serves as a vibrant bridge connecting cultures, 
                 fostering understanding, and creating lasting friendships among students from around the world.
               </p>
-              <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+              <p className="text-lg font-body text-gray-700 mb-8 leading-relaxed">
                 We promote multicultural exchange, support international students in their academic journey, 
                 and organize events that celebrate the rich diversity of our global community. Whether you're 
                 an international student looking for a home away from home or a local student eager to explore 
@@ -147,19 +147,19 @@ export default function HomePage() {
               <div className="space-y-4">
                 <div className="flex items-center">
                   <div className="w-2 h-2 bg-orange-600 rounded-full mr-3"></div>
-                  <span className="text-gray-700">Cultural exchange programs and workshops</span>
+                  <span className="font-modern text-gray-700">Cultural exchange programs and workshops</span>
                 </div>
                 <div className="flex items-center">
                   <div className="w-2 h-2 bg-orange-600 rounded-full mr-3"></div>
-                  <span className="text-gray-700">International food festivals and celebrations</span>
+                  <span className="font-modern text-gray-700">International food festivals and celebrations</span>
                 </div>
                 <div className="flex items-center">
                   <div className="w-2 h-2 bg-orange-600 rounded-full mr-3"></div>
-                  <span className="text-gray-700">Academic and social support network</span>
+                  <span className="font-modern text-gray-700">Academic and social support network</span>
                 </div>
                 <div className="flex items-center">
                   <div className="w-2 h-2 bg-orange-600 rounded-full mr-3"></div>
-                  <span className="text-gray-700">Community service and outreach initiatives</span>
+                  <span className="font-modern text-gray-700">Community service and outreach initiatives</span>
                 </div>
               </div>
             </div>
@@ -176,23 +176,23 @@ export default function HomePage() {
           <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div className="bg-white p-6 rounded-lg shadow-md">
               <img className="w-16 h-16 mx-auto mb-4 opacity-80" src="/images/user.png" alt="Officers icon" />
-              <div className="text-3xl font-bold text-orange-600 mb-2">7</div>
-              <div className="text-gray-600">Executive Officers</div>
+              <div className="text-3xl font-display font-bold text-orange-600 mb-2">7</div>
+              <div className="font-modern text-gray-600">Executive Officers</div>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
               <img className="w-16 h-16 mx-auto mb-4 opacity-80" src="/images/people.png" alt="Members icon" />
-              <div className="text-3xl font-bold text-orange-600 mb-2">217</div>
-              <div className="text-gray-600">Active Members</div>
+              <div className="text-3xl font-display font-bold text-orange-600 mb-2">217</div>
+              <div className="font-modern text-gray-600">Active Members</div>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
               <img className="w-16 h-16 mx-auto mb-4 opacity-80" src="/images/calendar.png" alt="Events icon" />
-              <div className="text-3xl font-bold text-orange-600 mb-2">66</div>
-              <div className="text-gray-600">Events This Year</div>
+              <div className="text-3xl font-display font-bold text-orange-600 mb-2">66</div>
+              <div className="font-modern text-gray-600">Events This Year</div>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
               <img className="w-16 h-16 mx-auto mb-4 opacity-80" src="/images/world.png" alt="Countries icon" />
-              <div className="text-3xl font-bold text-orange-600 mb-2">100+</div>
-              <div className="text-gray-600">Countries Represented</div>
+              <div className="text-3xl font-display font-bold text-orange-600 mb-2">100+</div>
+              <div className="font-modern text-gray-600">Countries Represented</div>
             </div>
           </div>
         </div>
@@ -202,10 +202,10 @@ export default function HomePage() {
       <section id="events" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl font-display font-bold text-gray-900 mb-4">
               Upcoming <span className="text-orange-600">Events</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl font-elegant text-gray-600 max-w-2xl mx-auto">
               Join us for exciting cultural events, educational workshops, and community gatherings
             </p>
           </div>
@@ -214,12 +214,12 @@ export default function HomePage() {
             {/* Event 1 */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200">
               <div className="bg-orange-600 text-white p-4">
-                <div className="text-sm font-semibold">March 15, 2025</div>
-                <div className="text-xs opacity-90">7:00 PM - 9:00 PM</div>
+                <div className="text-sm font-modern font-semibold">March 15, 2025</div>
+                <div className="text-xs opacity-90 font-body">7:00 PM - 9:00 PM</div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">International Food Festival</h3>
-                <p className="text-gray-600 mb-4">
+                <h3 className="text-xl font-display font-semibold text-gray-900 mb-2">International Food Festival</h3>
+                <p className="font-body text-gray-600 mb-4">
                   Experience flavors from around the world as our members share traditional dishes from their home countries.
                 </p>
                 <div className="flex items-center text-sm text-gray-500">
@@ -227,7 +227,7 @@ export default function HomePage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
-                  Campus Center Ballroom
+                  <span className="font-modern">Campus Center Ballroom</span>
                 </div>
               </div>
             </div>
@@ -235,12 +235,12 @@ export default function HomePage() {
             {/* Event 2 */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200">
               <div className="bg-orange-600 text-white p-4">
-                <div className="text-sm font-semibold">March 22, 2025</div>
-                <div className="text-xs opacity-90">6:30 PM - 8:00 PM</div>
+                <div className="text-sm font-modern font-semibold">March 22, 2025</div>
+                <div className="text-xs opacity-90 font-body">6:30 PM - 8:00 PM</div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Cultural Presentation Night</h3>
-                <p className="text-gray-600 mb-4">
+                <h3 className="text-xl font-display font-semibold text-gray-900 mb-2">Cultural Presentation Night</h3>
+                <p className="font-body text-gray-600 mb-4">
                   Learn about different cultures through presentations, music, and traditional performances by our international students.
                 </p>
                 <div className="flex items-center text-sm text-gray-500">
@@ -248,7 +248,7 @@ export default function HomePage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
-                  Science Center Auditorium
+                  <span className="font-modern">Science Center Auditorium</span>
                 </div>
               </div>
             </div>
@@ -256,12 +256,12 @@ export default function HomePage() {
             {/* Event 3 */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200">
               <div className="bg-orange-600 text-white p-4">
-                <div className="text-sm font-semibold">April 5, 2025</div>
-                <div className="text-xs opacity-90">2:00 PM - 4:00 PM</div>
+                <div className="text-sm font-modern font-semibold">April 5, 2025</div>
+                <div className="text-xs opacity-90 font-body">2:00 PM - 4:00 PM</div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">International Students Workshop</h3>
-                <p className="text-gray-600 mb-4">
+                <h3 className="text-xl font-display font-semibold text-gray-900 mb-2">International Students Workshop</h3>
+                <p className="font-body text-gray-600 mb-4">
                   Essential resources and support for international students, covering visa procedures, academic guidance, and campus life.
                 </p>
                 <div className="flex items-center text-sm text-gray-500">
@@ -269,14 +269,14 @@ export default function HomePage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
-                  International Student Services
+                  <span className="font-modern">International Student Services</span>
                 </div>
               </div>
             </div>
           </div>
 
           <div className="text-center mt-12">
-            <button className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
+            <button className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-lg font-modern font-semibold transition-colors">
               View All Events
             </button>
           </div>
@@ -287,10 +287,10 @@ export default function HomePage() {
       <section id="gallery" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl font-display font-bold text-gray-900 mb-4">
               Event <span className="text-orange-600">Gallery</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl font-elegant text-gray-600 max-w-2xl mx-auto">
               Memories from our cultural celebrations, workshops, and community events
             </p>
           </div>
@@ -304,22 +304,22 @@ export default function HomePage() {
               <img src="/images/main.png" alt="Cultural celebration" className="w-full h-full object-cover hover:scale-105 transition-transform cursor-pointer" />
             </div>
             <div className="aspect-square bg-orange-200 rounded-lg flex items-center justify-center">
-              <span className="text-orange-600 font-semibold">Food Festival 2024</span>
+              <span className="text-orange-600 font-modern font-semibold">Food Festival 2024</span>
             </div>
             <div className="aspect-square bg-blue-200 rounded-lg flex items-center justify-center">
-              <span className="text-blue-600 font-semibold">Cultural Night</span>
+              <span className="text-blue-600 font-modern font-semibold">Cultural Night</span>
             </div>
             <div className="aspect-square bg-green-200 rounded-lg flex items-center justify-center">
-              <span className="text-green-600 font-semibold">Welcome Event</span>
+              <span className="text-green-600 font-modern font-semibold">Welcome Event</span>
             </div>
             <div className="aspect-square bg-purple-200 rounded-lg flex items-center justify-center">
-              <span className="text-purple-600 font-semibold">Workshop Series</span>
+              <span className="text-purple-600 font-modern font-semibold">Workshop Series</span>
             </div>
             <div className="aspect-square bg-red-200 rounded-lg flex items-center justify-center">
-              <span className="text-red-600 font-semibold">Community Service</span>
+              <span className="text-red-600 font-modern font-semibold">Community Service</span>
             </div>
             <div className="aspect-square bg-yellow-200 rounded-lg flex items-center justify-center">
-              <span className="text-yellow-600 font-semibold">Graduation Celebration</span>
+              <span className="text-yellow-600 font-modern font-semibold">Graduation Celebration</span>
             </div>
           </div>
         </div>
@@ -329,10 +329,10 @@ export default function HomePage() {
       <section id="executives" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl font-display font-bold text-gray-900 mb-4">
               Executive <span className="text-orange-600">Board</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl font-elegant text-gray-600 max-w-2xl mx-auto">
               Meet the dedicated leaders who make our international community thrive
             </p>
           </div>
@@ -354,9 +354,9 @@ export default function HomePage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                   </svg>
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900">{exec.name}</h3>
-                <p className="text-orange-600 font-medium">{exec.position}</p>
-                <p className="text-sm text-gray-500">{exec.country}</p>
+                <h3 className="text-lg font-modern font-semibold text-gray-900">{exec.name}</h3>
+                <p className="text-orange-600 font-body font-medium">{exec.position}</p>
+                <p className="text-sm font-body text-gray-500">{exec.country}</p>
               </div>
             ))}
           </div>
@@ -367,10 +367,10 @@ export default function HomePage() {
       <section id="contact" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl font-display font-bold text-gray-900 mb-4">
               Get In <span className="text-orange-600">Touch</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl font-elegant text-gray-600 max-w-2xl mx-auto">
               Ready to join our international community? We'd love to hear from you!
             </p>
           </div>
@@ -387,12 +387,12 @@ export default function HomePage() {
                     </div>
                   </div>
                   <div className="ml-4">
-                    <h3 className="text-lg font-semibold text-gray-900">Email Us</h3>
-                    <p className="text-gray-600">internationalclub@gettysburg.edu</p>
+                    <h3 className="text-lg font-modern font-semibold text-gray-900">Email Us</h3>
+                    <p className="font-body text-gray-600">amatte01@gettysburg.edu</p>
                   </div>
                 </div>
 
-                <div className="flex items-start">
+                {/* <div className="flex items-start">
                   <div className="flex-shrink-0">
                     <div className="w-10 h-10 bg-orange-600 rounded-lg flex items-center justify-center">
                       <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -405,9 +405,9 @@ export default function HomePage() {
                     <h3 className="text-lg font-semibold text-gray-900">Visit Us</h3>
                     <p className="text-gray-600">Campus Center, Room 202<br />Gettysburg College<br />Gettysburg, PA 17325</p>
                   </div>
-                </div>
+                </div> */}
 
-                <div className="flex items-start">
+                {/* <div className="flex items-start">
                   <div className="flex-shrink-0">
                     <div className="w-10 h-10 bg-orange-600 rounded-lg flex items-center justify-center">
                       <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -419,29 +419,29 @@ export default function HomePage() {
                     <h3 className="text-lg font-semibold text-gray-900">Office Hours</h3>
                     <p className="text-gray-600">Monday - Friday: 2:00 PM - 5:00 PM<br />Weekends: By appointment</p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-lg">
-              <h3 className="text-2xl font-semibold text-gray-900 mb-6">Send us a message</h3>
+              <h3 className="text-2xl font-display font-semibold text-gray-900 mb-6">Send us a message</h3>
               <form className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">First Name</label>
+                    <label className="block text-sm font-modern font-medium text-gray-700 mb-2">First Name</label>
                     <input type="text" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent" />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
+                    <label className="block text-sm font-modern font-medium text-gray-700 mb-2">Last Name</label>
                     <input type="text" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent" />
                   </div>
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                  <label className="block text-sm font-modern font-medium text-gray-700 mb-2">Email</label>
                   <input type="email" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent" />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Student Status</label>
+                  <label className="block text-sm font-modern font-medium text-gray-700 mb-2">Student Status</label>
                   <select className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent">
                     <option>Select your status</option>
                     <option>International Student</option>
@@ -451,10 +451,10 @@ export default function HomePage() {
                   </select>
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                  <label className="block text-sm font-modern font-medium text-gray-700 mb-2">Message</label>
                   <textarea rows="4" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"></textarea>
                 </div>
-                <button type="submit" className="w-full bg-orange-600 hover:bg-orange-700 text-white py-3 rounded-lg font-semibold transition-colors">
+                <button type="submit" className="w-full bg-orange-600 hover:bg-orange-700 text-white py-3 rounded-lg font-modern font-semibold transition-colors">
                   Send Message
                 </button>
               </form>
@@ -468,8 +468,8 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-xl font-semibold mb-4">International Club</h3>
-              <p className="text-gray-300 mb-4">
+              <h3 className="text-xl font-display font-semibold mb-4">International Club</h3>
+              <p className="font-body text-gray-300 mb-4">
                 Building bridges between cultures at Gettysburg College since 1995.
               </p>
               <div className="flex space-x-4">
@@ -490,8 +490,8 @@ export default function HomePage() {
             </div>
             
             <div>
-              <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
-              <ul className="space-y-2 text-gray-300">
+              <h3 className="text-xl font-display font-semibold mb-4">Quick Links</h3>
+              <ul className="space-y-2 font-body text-gray-300">
                 <li><button onClick={() => scrollToSection('about')} className="hover:text-orange-500 transition-colors">About Us</button></li>
                 <li><button onClick={() => scrollToSection('events')} className="hover:text-orange-500 transition-colors">Events</button></li>
                 <li><button onClick={() => scrollToSection('gallery')} className="hover:text-orange-500 transition-colors">Gallery</button></li>
@@ -501,8 +501,8 @@ export default function HomePage() {
             </div>
             
             <div>
-              <h3 className="text-xl font-semibold mb-4">Contact Info</h3>
-              <div className="text-gray-300 space-y-2">
+              <h3 className="text-xl font-display font-semibold mb-4">Contact Info</h3>
+              <div className="font-body text-gray-300 space-y-2">
                 <p>internationalclub@gettysburg.edu</p>
                 <p>Campus Center, Room 202</p>
                 <p>Gettysburg College</p>
@@ -512,7 +512,7 @@ export default function HomePage() {
           </div>
           
           <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 Gettysburg College International Club. All rights reserved.</p>
+            <p className="font-body">&copy; 2025 Gettysburg College International Club. All rights reserved.</p>
           </div>
         </div>
       </footer>

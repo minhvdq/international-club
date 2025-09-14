@@ -1,1 +1,18 @@
 @import "tailwindcss";
+
+/* Global base styles for elegant typography */
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom CSS variables for consistent styling */
+:root {
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-elegant: 'Cormorant Garamond', serif;
+  --font-modern: 'Poppins', sans-serif;
+}
