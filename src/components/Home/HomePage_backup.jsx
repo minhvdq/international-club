@@ -229,33 +229,27 @@ ${formData.message}`;
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="pt-16 min-h-screen relative bg-gradient-to-br from-orange-50 to-white">
-        
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: 'url(/images/main.png)' }}
-        ></div>
-        <div className="absolute inset-0 bg-black/50"></div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 min-h-screen flex items-center">
-          <div className="text-center w-full">
-            <h1 className="text-5xl md:text-7xl font-display font-bold text-white mb-6 drop-shadow-lg">
+      <section id="home" className="pt-16 min-h-screen bg-gradient-to-br from-orange-50 to-white flex items-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+          <div className="text-center">
+            <h1 className="text-5xl md:text-7xl font-display font-bold text-gray-900 mb-6">
               Welcome to the<br />
-              <span className="text-orange-400">International Club</span>
+              <span className="text-orange-600">International Club</span>
             </h1>
-            <p className="text-xl md:text-2xl font-elegant text-white mb-8 max-w-3xl mx-auto drop-shadow-md">
+            <p className="text-xl md:text-2xl font-elegant text-gray-600 mb-8 max-w-3xl mx-auto">
               Celebrating diversity, fostering global understanding, and building lasting friendships 
               at Gettysburg College
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button 
                 onClick={() => scrollToSection('about')}
-                className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-lg text-lg font-modern font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
+                className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-lg text-lg font-modern font-semibold transition-all duration-300 transform hover:scale-105"
               >
                 Learn More
               </button>
               <button 
                 onClick={() => scrollToSection('contact')}
-                className="border-2 border-white text-white hover:bg-white hover:text-orange-600 px-8 py-4 rounded-lg text-lg font-modern font-semibold transition-all duration-300 shadow-lg"
+                className="border-2 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white px-8 py-4 rounded-lg text-lg font-modern font-semibold transition-all duration-300"
               >
                 Join Us
               </button>
