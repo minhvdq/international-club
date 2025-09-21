@@ -37,56 +37,8 @@ export default function HomePage() {
   };
 
   // Events data
-  const allEvents = [
-    {
-      id: 1,
-      title: "International Food Festival",
-      date: "March 15, 2025",
-      time: "7:00 PM - 9:00 PM",
-      location: "Campus Center Ballroom",
-      description: "Experience flavors from around the world as our members share traditional dishes from their home countries."
-    },
-    {
-      id: 2,
-      title: "Cultural Presentation Night",
-      date: "March 22, 2025",
-      time: "6:30 PM - 8:00 PM",
-      location: "Science Center Auditorium",
-      description: "Learn about different cultures through presentations, music, and traditional performances by our international students."
-    },
-    {
-      id: 3,
-      title: "International Students Workshop",
-      date: "April 5, 2025",
-      time: "2:00 PM - 4:00 PM",
-      location: "International Student Services",
-      description: "Essential resources and support for international students, covering visa procedures, academic guidance, and campus life."
-    },
-    {
-      id: 4,
-      title: "Global Career Fair",
-      date: "April 12, 2025",
-      time: "10:00 AM - 4:00 PM",
-      location: "Campus Center",
-      description: "Connect with international companies and organizations offering career opportunities around the world."
-    },
-    {
-      id: 5,
-      title: "Spring Cultural Festival",
-      date: "April 20, 2025",
-      time: "12:00 PM - 6:00 PM",
-      location: "Quad Area",
-      description: "Celebrate spring with traditional music, dance, art, and food from various cultures."
-    },
-    {
-      id: 6,
-      title: "Study Abroad Information Session",
-      date: "May 3, 2025",
-      time: "3:00 PM - 5:00 PM",
-      location: "Breidenbaugh Hall",
-      description: "Learn about study abroad opportunities and hear from students who have studied internationally."
-    }
-  ];
+  // Intentionally empty; events will be populated from JSON by admin later
+  const allEvents = [];
 
   const displayedEvents = showAllEvents ? allEvents : allEvents.slice(0, 3);
 
@@ -306,25 +258,25 @@ ${formData.message}`;
 
           {/* Statistics */}
           <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="group bg-white p-6 rounded-lg shadow-md border border-transparent hover:border-orange-200 hover:shadow-lg transition-all duration-300 ease-out hover:-translate-y-1 hover:bg-gradient-to-br hover:from-white hover:to-orange-50">
               <img className="w-16 h-16 mx-auto mb-4 opacity-80" src="/images/user.png" alt="Officers icon" />
-              <div className="text-3xl font-display font-bold text-orange-600 mb-2">6</div>
-              <div className="font-modern text-gray-600">Executive Officers</div>
+              <div className="text-3xl font-display font-bold text-orange-600 mb-2 transition-transform duration-300 group-hover:scale-110 group-hover:drop-shadow-sm">6</div>
+              <div className="font-modern text-gray-600 group-hover:text-gray-800 transition-colors">Executive Officers</div>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="group bg-white p-6 rounded-lg shadow-md border border-transparent hover:border-orange-200 hover:shadow-lg transition-all duration-300 ease-out hover:-translate-y-1 hover:bg-gradient-to-br hover:from-white hover:to-orange-50">
               <img className="w-16 h-16 mx-auto mb-4 opacity-80" src="/images/people.png" alt="Members icon" />
-              <div className="text-3xl font-display font-bold text-orange-600 mb-2">165</div>
-              <div className="font-modern text-gray-600">Active Members</div>
+              <div className="text-3xl font-display font-bold text-orange-600 mb-2 transition-transform duration-300 group-hover:scale-110 group-hover:drop-shadow-sm">165</div>
+              <div className="font-modern text-gray-600 group-hover:text-gray-800 transition-colors">Active Members</div>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="group bg-white p-6 rounded-lg shadow-md border border-transparent hover:border-orange-200 hover:shadow-lg transition-all duration-300 ease-out hover:-translate-y-1 hover:bg-gradient-to-br hover:from-white hover:to-orange-50">
               <img className="w-16 h-16 mx-auto mb-4 opacity-80" src="/images/calendar.png" alt="Events icon" />
-              <div className="text-3xl font-display font-bold text-orange-600 mb-2">6</div>
-              <div className="font-modern text-gray-600">Events This Year</div>
+              <div className="text-3xl font-display font-bold text-orange-600 mb-2 transition-transform duration-300 group-hover:scale-110 group-hover:drop-shadow-sm">6</div>
+              <div className="font-modern text-gray-600 group-hover:text-gray-800 transition-colors">Events This Year</div>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="group bg-white p-6 rounded-lg shadow-md border border-transparent hover:border-orange-200 hover:shadow-lg transition-all duration-300 ease-out hover:-translate-y-1 hover:bg-gradient-to-br hover:from-white hover:to-orange-50">
               <img className="w-16 h-16 mx-auto mb-4 opacity-80" src="/images/world.png" alt="Countries icon" />
-              <div className="text-3xl font-display font-bold text-orange-600 mb-2">60+</div>
-              <div className="font-modern text-gray-600">Countries Represented</div>
+              <div className="text-3xl font-display font-bold text-orange-600 mb-2 transition-transform duration-300 group-hover:scale-110 group-hover:drop-shadow-sm">60+</div>
+              <div className="font-modern text-gray-600 group-hover:text-gray-800 transition-colors">Countries Represented</div>
             </div>
           </div>
         </div>
@@ -342,38 +294,48 @@ ${formData.message}`;
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {displayedEvents.map((event) => (
-              <div key={event.id} className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200">
-                <div className="bg-orange-600 text-white p-4">
-                  <div className="text-sm font-modern font-semibold">{event.date}</div>
-                  <div className="text-xs opacity-90 font-body">{event.time}</div>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-display font-semibold text-gray-900 mb-2">{event.title}</h3>
-                  <p className="font-body text-gray-600 mb-4">
-                    {event.description}
-                  </p>
-                  <div className="flex items-center text-sm text-gray-500">
-                    <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 616 0z" />
-                    </svg>
-                    <span className="font-modern">{event.location}</span>
+          {allEvents.length === 0 ? (
+            <div className="text-center py-16 border-2 border-dashed border-orange-200 rounded-xl bg-orange-50/40">
+              <div className="text-2xl font-display font-semibold text-gray-700 mb-2">Events Coming Soon</div>
+              <p className="font-modern text-gray-600 max-w-md mx-auto">Our team is preparing an exciting calendar. Please check back shortly for upcoming activities.</p>
+            </div>
+          ) : (
+            <>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {displayedEvents.map((event) => (
+                  <div key={event.id} className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200">
+                    <div className="bg-orange-600 text-white p-4">
+                      <div className="text-sm font-modern font-semibold">{event.date}</div>
+                      <div className="text-xs opacity-90 font-body">{event.time}</div>
+                    </div>
+                    <div className="p-6">
+                      <h3 className="text-xl font-display font-semibold text-gray-900 mb-2">{event.title}</h3>
+                      <p className="font-body text-gray-600 mb-4">
+                        {event.description}
+                      </p>
+                      <div className="flex items-center text-sm text-gray-500">
+                        <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 616 0z" />
+                        </svg>
+                        <span className="font-modern">{event.location}</span>
+                      </div>
+                    </div>
                   </div>
-                </div>
+                ))}
               </div>
-            ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <button 
-              onClick={toggleShowAllEvents}
-              className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-lg font-modern font-semibold transition-colors"
-            >
-              {showAllEvents ? 'Show Less Events' : 'View All Events'}
-            </button>
-          </div>
+              {allEvents.length > 3 && (
+                <div className="text-center mt-12">
+                  <button 
+                    onClick={toggleShowAllEvents}
+                    className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-lg font-modern font-semibold transition-colors"
+                  >
+                    {showAllEvents ? 'Show Less Events' : 'View All Events'}
+                  </button>
+                </div>
+              )}
+            </>
+          )}
         </div>
       </section>
 
